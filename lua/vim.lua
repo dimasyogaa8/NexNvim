@@ -45,3 +45,8 @@ vim.g.indent_guides_default_mapping = false
 vim.cmd('highlight IndentGuidesOdd guifg=#FFFFFF')
 vim.cmd('highlight IndentGuidesEven guifg=#FFFFFF')
 vim.g.indent_guides_enable_on_vim_startup = 1
+
+local keymap = vim.keymap
+
+keymap.set("n", "<C-l>", ":split<CR>", {})
+keymap.set("n", "<C-t", ":wincmd<CR>", {})

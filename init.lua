@@ -44,4 +44,43 @@ require("mason-lspconfig").setup()
 -- After setting up mason-lspconfig you may set up servers via lspconfig
    require("lspconfig").lua_ls.setup {}
 -- require("lspconfig").rust_analyzer.setup {}
--- ...
+require('nvim-nonicons').setup {}
+local icons = require("nvim-nonicons")
+local nonicons_extention = require("nvim-nonicons.extentions.lualine")
+
+require("lualine").setup({
+  sections = {
+    lualine_a = { nonicons_extention.mode },
+    lualine_z = {
+      {
+        "branch",
+        icon = icons.get("git-branch"),
+      },
+    },
+  }
+})
+local icons = require("nvim-nonicons")
+require("telescope").setup({
+  defaults = {
+    prompt_prefix = "  " .. icons.get("telescope") .. "  ",
+    selection_caret = " ❯ ",
+    entry_prefix = "   ",
+  },
+})
+local icons = require "nvim-nonicons"
+icons.get("file")
+
+local nonicons_extention = require("nvim-nonicons.extentions.nvim-notify")
+
+require("notify").setup({
+  icons = nonicons_extention.icons,
+})
+local icons = require("nvim-nonicons")
+
+require("telescope").setup({
+  defaults = {
+    prompt_prefix = "  " .. icons.get("telescope") .. "  ",
+    selection_caret = " ❯ ",
+    entry_prefix = "   ",
+  },
+})
