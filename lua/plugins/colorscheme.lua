@@ -1,0 +1,3 @@
+return {
+  "zSnails/cityscape.nvim"
+}
