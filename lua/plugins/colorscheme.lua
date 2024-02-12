@@ -1,3 +1,4 @@
 return {
-  "zSnails/cityscape.nvim"
+  "zSnails/cityscape.nvim",
+  "rebelot/kanagawa.nvim"
 }

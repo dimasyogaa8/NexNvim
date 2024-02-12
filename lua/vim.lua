@@ -15,7 +15,7 @@ vim.cmd("set ttimeoutlen=0")
 vim.cmd("set wildmenu")
 vim.cmd("set number")
 vim.cmd("set nolist")
-vim.cmd("colorscheme melange")
+vim.cmd("colorscheme kanagawa")
 --Tabs size
 vim.cmd("set expandtab")
 vim.cmd("set shiftwidth=2")
